@@ -19,6 +19,6 @@ function arma($Comienzo, $P1,$P2,$P3,$Fin){
 		$cont++;
     }
     $Frase=$Frase.".";
-	echo json_encode(utf8_encode($Frase));
+	echo json_encode($Frase);
 }
 ?>
