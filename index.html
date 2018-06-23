@@ -7,25 +7,35 @@
 	<link rel="stylesheet" href="assets/fontawesome/css/all.css">
 	<link rel="stylesheet" href="assets/css/estilo_base.css">
   <link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Plantilla de Bootstrap 4 con Jquery">
+  <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="Piense como un socialista del siglo XXI">
   <meta name="author" content="Delebrindel">
 </head>
 <body>
 	<main role="main">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-8">
+        <div class="col-12 col-md-8">
           <section  class="col-10 offset-1 col-md-8 col-md-offset-2 mt-5 text-center">
-            <h1 class="jumbotron-heading">Motherland</h1>
+            <h1 class="jumbotron-heading" id="Titulo"><i class="fas fa-star"></i> Motherland</h1>
             <p class="lead text-muted">Piense como un socialista del siglo XXI.</p>
           </section>
-          <section id="Genera" class="col-10 offset-1 col-md-8 col-md-offset-2 text-center">
-            <span id="Frase"></span>
+          <section id="Genera" class="col-10 offset-1 col-md-8 col-md-offset-2 pb-5 text-center">
+            <span id="Frase" class="mb-5"></span>
+            <br>
+            <button class="mt-5 btn btn-danger btn-large" onclick="iniciar()"><i class="fas fa-gavel"></i>  Unirme a la revolución.</button>
           </section> 
         </div>
-        <div class="py-2 col-4 box-shadow">
-          <img data-src="holder.js/100px600?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+        <div class="py-2 col-12 col-md-4 py-5 px-3 paper" id="Protector">
+          <h1 id="Instrucciones" class="text-center">
+            Genera tus propias ideas para compartir con tus <del>amigos</del> camaradas.</p>
+          </h1>
+          <div class="col px-5" id="Pasos">
+              <small class="mb-2">1) Dale clic al botón.</small><br>
+              <small class="mb-2">2) Espera a que se redacte tu frase.</small><br>
+              <small class="mb-2">3) Utilizala en cualquier contexto para comenzar una conversación.</small>
+          </div>
         </div>
       </div>
     </div>
@@ -33,9 +43,11 @@
   <footer class="text-muted">
     <div class="container">
       <p class="float-right">
-        <a href="#">Volver al inicio</a>
+        <small>
+
+        Por <a href="https://github.com/delebrindel/" target="Github">Delebrindel</a>, basado en <a href="http://danieltorrer.github.io/postmo/" target="Postmo">Postmo</a> por <a href="https://twitter.com/spacem3n" target="Twitter">Daniel</a>
+        </small>
       </p>
-      <p>By Delebrindel</p>
     </div>
   </footer>
 </body>
